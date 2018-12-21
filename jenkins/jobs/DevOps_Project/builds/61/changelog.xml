@@ -1,0 +1,12 @@
+commit 0465a53b979de95ab6544da3ba92fcbccd53f333
+tree 6a3e7b81ee8b93375bf0af03f69da0c11f6f363b
+parent a553ab954ce41224f910422c38dbd6e27b630207
+author jachun <jachun@DESKTOP-SM79OHF> 2018-10-31 14:38:00 +0900
+committer jachun <jachun@DESKTOP-SM79OHF> 2018-10-31 14:38:00 +0900
+
+    test
+
+
+
+:100644 100644 0ccfab0f0f3e1658d286823a991cd92d14561228 88b7b3e0c815dd2799021c259ec840fe0f2f4b84 M	TestSG/.gen_src/com/tmax/DemoEmpSO.java
+:100644 100644 0853dc158b713ba3b055c6c84c2ce6ec0a210a90 c6788b85e3b4ac6345c2f3fe1dab2e8070ae3931 M	TestSG/meta/com/tmax/DemoEmpSO.so

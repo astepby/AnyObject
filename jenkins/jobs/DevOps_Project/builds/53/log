@@ -1,0 +1,200 @@
+Started by user [8mha:////4KpxVUFqKgIX+c8ZySAxB2f3SIrhd/haNKEiwjry7hsJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /home/po7dev/jenkins/workspace/DevOps_Project
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url ssh://git-repo@192.168.6.68:22/testing.git # timeout=10
+Fetching upstream changes from ssh://git-repo@192.168.6.68:22/testing.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress ssh://git-repo@192.168.6.68:22/testing.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9f4a58f28d7a7b191e08711dadc7d4bc527ddcf7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9f4a58f28d7a7b191e08711dadc7d4bc527ddcf7
+Commit message: "test"
+ > git rev-list --no-walk 9f4a58f28d7a7b191e08711dadc7d4bc527ddcf7 # timeout=10
+[DevOps_Project] $ /bin/sh -xe /tmp/jenkins7524966491437933549.sh
++ /home/po7dev/jenkins/workspace/DevOps_Project/env_insert.sh
+propPath=/home/po7dev/jenkins/workspace/DevOps_Project/gradle.properties projectName=DevOps_Project poHome=/home/po7dev/proobject7 jenkinsHome=/home/po7dev/jenkins IsFullBuild=false buildNumber=53
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.PoPropertiesInsert main
+INFO: return of get build class path is true
+[DevOps_Project] $ /bin/sh -xe /tmp/jenkins5506787443701717065.sh
++ /home/po7dev/jenkins/workspace/DevOps_Project/buildRscInfo.sh
+lastlog=9f4a58f HEAD@{0}: checkout: moving from e5b4cd2ae93119c98523a16a5f2683fb09103db2 to 9f4a58f28d7a7b191e08711dadc7d4bc527ddcf7
+start=e5b4cd2ae93119c98523a16a5f2683fb09103db2
+end=9f4a58f28d7a7b191e08711dadc7d4bc527ddcf7
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: oldRev : e5b4cd2ae93119c98523a16a5f2683fb09103db2, newRev : 9f4a58f28d7a7b191e08711dadc7d4bc527ddcf7
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Project Name : DevOps_Project, Build Number : 53
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Build Resource Info Insert is Start
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestApp/.classpath is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestApp/.gen_src/com/tmax/test/TestAppDO.java is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestApp/.gen_src/com/tmax/test/TestAppDOMsgJson.java is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestApp/bin/com/tmax/test/TestAppDO.class is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestApp/bin/com/tmax/test/TestAppDOMsgJson.class is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.classpath is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.gen_src/com/tmax/test/TmaxDO.java is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.gen_src/com/tmax/test/TmaxDOF.java is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.gen_src/com/tmax/test/TmaxSO.java is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.gen_src/com/tmax/test/TmaxSOExecutor.java is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.proobject/Entries is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/META-INF/servicegroup.xml is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/.gitignore is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/com/tmax/DemoEmpDTO.class is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/com/tmax/DemoEmpDTOMsgJson.class is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/com/tmax/test/TmaxDO.class is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/com/tmax/test/TmaxDOF$FULLQUERY.class is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/com/tmax/test/TmaxDOF.class is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/com/tmax/test/TmaxDOF.factory is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/com/tmax/test/TmaxDOMsgJson.class is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/com/tmax/test/TmaxSO.class is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:07 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/com/tmax/test/TmaxSOExecutor.class is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 1:36:08 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall BuildRscInfoCall
+INFO: BuildRscInfo Success! true
+Oct 31, 2018 1:36:08 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Build Resource Info Insert is Done
+[Gradle] - Launching build.
+[DevOps_Project] $ gradle cleanDir appDtoBuild appSrcCopy appSrcBuild dtoBuild srcCopy srcBuild appDtoJar appSrcJar dtoJar srcJar cleanBuildNumDir -b fullBuild.gradle
+Starting a Gradle Daemon (subsequent builds will be faster)
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+	at fullBuild_9bprqpvfn27jj2iqwmx8e2wbp$_run_closure3$_closure31.doCall(/home/po7dev/jenkins/workspace/DevOps_Project/fullBuild.gradle:82)
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
+cleanDir start!!!
+cleanDir end!!!
+appDtoBuild start!!!
+appDtoBuild end!!!
+appSrcCopy start!!!
+appSrcCopy end!!!
+appSrcBuild start!!!
+appSrcBuild end!!!
+dtoBuild start!!!
+dtoBuild end!!!
+srcCopy start!!!
+srcCopy end!!!
+rscBuild start!!!
+rscBuild end!!!
+appDtoJar start!!!
+appDtoJar end!!!
+appSrcJar start!!!
+appSrcJar end!!!
+dtoJar start!!!
+dtoJar end!!!
+srcJar start!!!
+srcJar end!!!
+cleanBuildNumDir start!!!
+cleanBuildNumDir end!!!
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:cleanDir SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoBuild SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcCopy SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcBuild SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoBuild SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcCopy SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcBuild SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoJar SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcJar SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoJar SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcJar SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:cleanBuildNumDir SKIPPED
+
+BUILD SUCCESSFUL in 2s
+Build step 'Invoke Gradle script' changed build result to SUCCESS
+[Gradle] - Launching build.
+[DevOps_Project] $ gradle makeEmptyDir appDtoCopy appDtoBuild appDtoClassCopy appSrcCopy appSrcBuild appSrcClassCopy dtoCopy dtoBuild dtoClassCopy srcCopy srcBuild srcClassCopy appDtoJar appSrcJar dtoJar srcJar cleanDir -b build.gradle
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+	at build_bg2c6ybuij180a9da4x9b2ko$_run_closure3$_closure55.doCall(/home/po7dev/jenkins/workspace/DevOps_Project/build.gradle:86)
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
+makeEmptyDir start!!!
+makeEmptyDir end!!!
+appDtoCopy start!!!
+appDtoCopy end!!!
+appDtoBuild start!!!
+appDtoBuild end!!!
+appDtoClassCopy start!!!
+---Deleted Application dto&msg Class List---
+---Deleted Application dto&msg Class List---
+appDtoClassCopy end!!!
+appSrcCopy start!!!
+appSrcCopy end!!!
+appSrcBuild start!!!
+appSrcBuild end!!!
+appSrcClassCopy start!!!
+---Deleted Application Class List---
+---Deleted Application Class List---
+appSrcClassCopy end!!!
+dtoCopy start!!!
+dtoCopy end!!!
+dtoBuild start!!!
+dtoBuild end!!!
+dtoClassCopy start!!!
+---Deleted dto&msg Class List---
+---Deleted dto&msg Class List---
+dtoClassCopy end!!!
+srcCopy start!!!
+srcCopy end!!!
+rscBuild start!!!
+rscBuild end!!!
+srcClassCopy start!!!
+---Deleted Class List---
+---Deleted Class List---
+srcClassCopy end!!!
+appDtoJar start!!!
+appDtoJar end!!!
+appSrcJar start!!!
+appSrcJar end!!!
+dtoJar start!!!
+dtoJar end!!!
+srcJar start!!!
+srcJar end!!!
+cleanDir start!!!
+cleanDir end!!!
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:makeEmptyDir UP-TO-DATE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoCopy NO-SOURCE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoBuild
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoClassCopy NO-SOURCE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcCopy NO-SOURCE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcBuild
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcClassCopy UP-TO-DATE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoCopy NO-SOURCE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoBuild
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoClassCopy NO-SOURCE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcCopy NO-SOURCE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcBuild
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcClassCopy
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoJar
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcJar
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoJar
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcJar
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:cleanDir
+
+BUILD SUCCESSFUL in 2s
+11 actionable tasks: 10 executed, 1 up-to-date
+[DevOps_Project] $ /bin/sh -xe /tmp/jenkins3162992926753627394.sh
++ /home/po7dev/jenkins/workspace/DevOps_Project/deploy.sh
+Oct 31, 2018 1:36:14 PM com.tmax.proobject.devclient.jenkins.RscDeployCall main
+INFO: Deploy Success! true
+Finished: SUCCESS

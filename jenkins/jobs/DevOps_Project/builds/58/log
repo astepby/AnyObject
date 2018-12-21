@@ -1,0 +1,234 @@
+Started by an SCM change
+Building in workspace /home/po7dev/jenkins/workspace/DevOps_Project
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url ssh://git-repo@192.168.6.68:22/testing.git # timeout=10
+Fetching upstream changes from ssh://git-repo@192.168.6.68:22/testing.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress ssh://git-repo@192.168.6.68:22/testing.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 6d88a69559bf20cad01d6d2668876a63a16d1c3f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6d88a69559bf20cad01d6d2668876a63a16d1c3f
+Commit message: "test"
+ > git rev-list --no-walk d74f22f3d37945cfd4d3618b6ab055f26ebbbedb # timeout=10
+[DevOps_Project] $ /bin/sh -xe /tmp/jenkins8331293117487102733.sh
++ /home/po7dev/jenkins/workspace/DevOps_Project/env_insert.sh
+propPath=/home/po7dev/jenkins/workspace/DevOps_Project/gradle.properties projectName=DevOps_Project poHome=/home/po7dev/proobject7 jenkinsHome=/home/po7dev/jenkins IsFullBuild=false buildNumber=58
+Oct 31, 2018 2:40:04 PM com.tmax.proobject.devclient.jenkins.PoPropertiesInsert main
+INFO: return of get build class path is true
+[DevOps_Project] $ /bin/sh -xe /tmp/jenkins702247294443820566.sh
++ /home/po7dev/jenkins/workspace/DevOps_Project/buildRscInfo.sh
+lastlog=6d88a69 HEAD@{0}: checkout: moving from d74f22f3d37945cfd4d3618b6ab055f26ebbbedb to 6d88a69559bf20cad01d6d2668876a63a16d1c3f
+start=d74f22f3d37945cfd4d3618b6ab055f26ebbbedb
+end=6d88a69559bf20cad01d6d2668876a63a16d1c3f
+Oct 31, 2018 2:40:05 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: oldRev : d74f22f3d37945cfd4d3618b6ab055f26ebbbedb, newRev : 6d88a69559bf20cad01d6d2668876a63a16d1c3f
+Oct 31, 2018 2:40:05 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Project Name : DevOps_Project, Build Number : 58
+Oct 31, 2018 2:40:05 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Build Resource Info Insert is Start
+Oct 31, 2018 2:40:05 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.gen_src/com/tmax/DemoEmpDO.java is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 2:40:05 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.gen_src/com/tmax/DemoEmpSO.java is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 2:40:05 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.gen_src/com/tmax/DemoEmpSOExecutor.java is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 2:40:05 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.gen_src/com/tmax/test/TmaxDOF.java is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 2:40:05 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.settings/com.tmaxsoft.proobject.prefs is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 2:40:05 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/com/tmax/test/TmaxDOF$FULLQUERY.class is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 2:40:05 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/com/tmax/test/TmaxDOF.factory is not in <APPLICATION>/meta/ dir
+Oct 31, 2018 2:40:05 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall BuildRscInfoCall
+INFO: BuildRscInfo Success! true
+Oct 31, 2018 2:40:05 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Build Resource Info Insert is Done
+[Gradle] - Launching build.
+[DevOps_Project] $ gradle cleanDir appDtoBuild appSrcCopy appSrcBuild dtoBuild srcCopy srcBuild appDtoJar appSrcJar dtoJar srcJar cleanBuildNumDir -b fullBuild.gradle
+Starting a Gradle Daemon (subsequent builds will be faster)
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+	at fullBuild_9bprqpvfn27jj2iqwmx8e2wbp$_run_closure3$_closure31.doCall(/home/po7dev/jenkins/workspace/DevOps_Project/fullBuild.gradle:82)
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
+cleanDir start!!!
+cleanDir end!!!
+appDtoBuild start!!!
+appDtoBuild end!!!
+appSrcCopy start!!!
+appSrcCopy end!!!
+appSrcBuild start!!!
+appSrcBuild end!!!
+dtoBuild start!!!
+dtoBuild end!!!
+srcCopy start!!!
+srcCopy end!!!
+rscBuild start!!!
+rscBuild end!!!
+appDtoJar start!!!
+appDtoJar end!!!
+appSrcJar start!!!
+appSrcJar end!!!
+dtoJar start!!!
+dtoJar end!!!
+srcJar start!!!
+srcJar end!!!
+cleanBuildNumDir start!!!
+cleanBuildNumDir end!!!
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:cleanDir SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoBuild SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcCopy SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcBuild SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoBuild SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcCopy SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcBuild SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoJar SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcJar SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoJar SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcJar SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:cleanBuildNumDir SKIPPED
+
+BUILD SUCCESSFUL in 2s
+Build step 'Invoke Gradle script' changed build result to SUCCESS
+[Gradle] - Launching build.
+[DevOps_Project] $ gradle makeEmptyDir appDtoCopy appDtoBuild appDtoClassCopy appSrcCopy appSrcBuild appSrcClassCopy dtoCopy dtoBuild dtoClassCopy srcCopy srcBuild srcClassCopy appDtoJar appSrcJar dtoJar srcJar cleanDir -b build.gradle
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+	at build_bg2c6ybuij180a9da4x9b2ko$_run_closure3$_closure55.doCall(/home/po7dev/jenkins/workspace/DevOps_Project/build.gradle:86)
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
+makeEmptyDir start!!!
+makeEmptyDir end!!!
+appDtoCopy start!!!
+appDtoCopy end!!!
+appDtoBuild start!!!
+appDtoBuild end!!!
+appDtoClassCopy start!!!
+---Deleted Application dto&msg Class List---
+---Deleted Application dto&msg Class List---
+appDtoClassCopy end!!!
+appSrcCopy start!!!
+appSrcCopy end!!!
+appSrcBuild start!!!
+appSrcBuild end!!!
+appSrcClassCopy start!!!
+---Deleted Application Class List---
+---Deleted Application Class List---
+appSrcClassCopy end!!!
+dtoCopy start!!!
+dtoCopy end!!!
+dtoBuild start!!!
+dtoBuild end!!!
+dtoClassCopy start!!!
+---Deleted dto&msg Class List---
+---Deleted dto&msg Class List---
+dtoClassCopy end!!!
+srcCopy start!!!
+srcCopy-----com/tmax/DemoEmpDO.java
+srcCopy-----com/tmax/DemoEmpSOExecutor.java
+srcCopy-----com/tmax/DemoEmpSO.java
+srcCopy-----com/tmax/test/TmaxDOF.java
+srcCopy end!!!
+rscBuild start!!!
+rscBuild end!!!
+srcClassCopy start!!!
+---Deleted Class List---
+---Deleted Class List---
+srcClassCopy end!!!
+appDtoJar start!!!
+appDtoJar end!!!
+appSrcJar start!!!
+appSrcJar end!!!
+dtoJar start!!!
+dtoJar end!!!
+srcJar start!!!
+srcJar end!!!
+cleanDir start!!!
+cleanDir end!!!
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:makeEmptyDir UP-TO-DATE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoCopy NO-SOURCE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoBuild
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoClassCopy NO-SOURCE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcCopy NO-SOURCE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcBuild
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcClassCopy UP-TO-DATE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoCopy NO-SOURCE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoBuild
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoClassCopy NO-SOURCE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcCopy
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcBuild
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:19 [error] The import com.tmax.DemoEmpDTO cannot be resolved
+[ant:iajc] import com.tmax.DemoEmpDTO;
+[ant:iajc]        ^^^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:22 [error] The type DemoEmpSO must implement the inherited abstract method ServiceObject<DemoEmpDTO,DemoEmpDTO>.service(DemoEmpDTO)
+[ant:iajc] public class DemoEmpSO implements com.tmax.proobject.model.service.ServiceObject<com.tmax.DemoEmpDTO, com.tmax.DemoEmpDTO>
+[ant:iajc]              ^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:22 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] public class DemoEmpSO implements com.tmax.proobject.model.service.ServiceObject<com.tmax.DemoEmpDTO, com.tmax.DemoEmpDTO>
+[ant:iajc]                                                                                  ^^^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:22 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] public class DemoEmpSO implements com.tmax.proobject.model.service.ServiceObject<com.tmax.DemoEmpDTO, com.tmax.DemoEmpDTO>
+[ant:iajc]                                                                                                       ^^^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:26 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] public com.tmax.DemoEmpDTO input = new com.tmax.DemoEmpDTO();
+[ant:iajc]        ^^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:26 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] public com.tmax.DemoEmpDTO input = new com.tmax.DemoEmpDTO();
+[ant:iajc]                                        ^^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:27 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] public com.tmax.DemoEmpDTO output = new com.tmax.DemoEmpDTO();
+[ant:iajc]        ^^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:27 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] public com.tmax.DemoEmpDTO output = new com.tmax.DemoEmpDTO();
+[ant:iajc]                                         ^^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:35 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] public com.tmax.DemoEmpDTO service(com.tmax.DemoEmpDTO arg0) throws java.lang.Throwable
+[ant:iajc]        ^^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:35 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] public com.tmax.DemoEmpDTO service(com.tmax.DemoEmpDTO arg0) throws java.lang.Throwable
+[ant:iajc]                                    ^^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:50 [error] DemoEmpDTO cannot be resolved to a type
+[ant:iajc] output = dof.get();
+[ant:iajc] ^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:50 [error] The method get() from the type DBDataObjectFactory<DemoEmpDTO> refers to the missing type DemoEmpDTO
+[ant:iajc] output = dof.get();
+[ant:iajc]              
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpSO.java:51 [error] DemoEmpDTO cannot be resolved to a type
+[ant:iajc] return output;
+[ant:iajc]        ^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpDO.java:6 [error] The import com.tmax.DemoEmpDTO cannot be resolved
+[ant:iajc] import com.tmax.DemoEmpDTO;
+[ant:iajc]        ^^^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpDO.java:15 [error] DemoEmpDTO cannot be resolved to a type
+[ant:iajc] public class DemoEmpDO extends DBDataObjectFactory<DemoEmpDTO>
+[ant:iajc]                                                    ^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpDO.java:66 [error] DemoEmpDTO cannot be resolved to a type
+[ant:iajc] public DemoEmpDTO getDataObject() {
+[ant:iajc]        ^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/tmp_src/com/tmax/DemoEmpDO.java:67 [error] DemoEmpDTO cannot be resolved to a type
+[ant:iajc] return new DemoEmpDTO();
+[ant:iajc]            ^^^^^^^
+[ant:iajc] 
+[ant:iajc] 17 errors
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcBuild FAILED
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/po7dev/jenkins/workspace/DevOps_Project/build.gradle' line: 1656
+
+* What went wrong:
+Execution failed for task ':srcBuild'.
+> compile errors: 17
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+6 actionable tasks: 5 executed, 1 up-to-date
+Build step 'Invoke Gradle script' changed build result to FAILURE
+Build step 'Invoke Gradle script' marked build as failure
+Finished: FAILURE

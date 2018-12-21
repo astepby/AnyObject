@@ -1,0 +1,13 @@
+commit 28a0b80732891fbb23ea2635ba8d1589d46465b9
+tree 219da91cb77f90682563f04f74a9351e449426f5
+parent 0cac236340277a51f44f3b3fccc35f9c947ece08
+author Tmax <Tmax@DESKTOP-1L9FCDK> 2018-10-30 21:36:13 +0900
+committer Tmax <Tmax@DESKTOP-1L9FCDK> 2018-10-30 21:36:13 +0900
+
+    test
+
+
+
+:100644 100644 b367e203c4cf57d6b82e9042d1a35f37d645a6c9 f0e71d5163c9f4c940dc1f862d5f2613d19acbc3 M	TestApp/.settings/org.eclipse.core.resources.prefs
+:100644 100644 880f5b6dc2c05587ca1e464cc56f6803393af659 30756c74193162c7a4a8af62e9f63d6fdfdf32fb M	TestSG/meta/com/tmax/test/TmaxDO.dto
+:100644 100644 b28dc2d7d864a5855a709f14a0e739d206660c04 ba43a702a46a23e0476530003a53ef14e4bdc0d7 M	TestSG/meta/com/tmax/test/TmaxDOMsgJson.msg

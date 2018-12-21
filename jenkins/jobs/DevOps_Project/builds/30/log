@@ -1,0 +1,85 @@
+Started by an SCM change
+Building in workspace /home/po7dev/jenkins/workspace/DevOps_Project
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url ssh://git-repo@192.168.6.68:22/testing.git # timeout=10
+Fetching upstream changes from ssh://git-repo@192.168.6.68:22/testing.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress ssh://git-repo@192.168.6.68:22/testing.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7b25a5ebeb94ae458e79d599783af435bad8f075 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7b25a5ebeb94ae458e79d599783af435bad8f075
+Commit message: "TEST"
+ > git rev-list --no-walk d1e711ea0316f2e2e99ff3ec194339374821f16d # timeout=10
+[DevOps_Project] $ /bin/sh -xe /tmp/jenkins459413030512341509.sh
++ /home/po7dev/jenkins/workspace/DevOps_Project/env_insert.sh
+propPath=/home/po7dev/jenkins/workspace/DevOps_Project/gradle.properties projectName=DevOps_Project poHome=/home/po7dev/proobject7 jenkinsHome=/home/po7dev/jenkins IsFullBuild=false buildNumber=30
+Oct 30, 2018 9:30:39 PM com.tmax.proobject.devclient.jenkins.PoPropertiesInsert main
+INFO: return of get build class path is true
+[DevOps_Project] $ /bin/sh -xe /tmp/jenkins7968777440573474842.sh
++ /home/po7dev/jenkins/workspace/DevOps_Project/buildRscInfo.sh
+lastlog=7b25a5e HEAD@{0}: checkout: moving from d1e711ea0316f2e2e99ff3ec194339374821f16d to 7b25a5ebeb94ae458e79d599783af435bad8f075
+start=d1e711ea0316f2e2e99ff3ec194339374821f16d
+end=7b25a5ebeb94ae458e79d599783af435bad8f075
+Oct 30, 2018 9:30:39 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: oldRev : d1e711ea0316f2e2e99ff3ec194339374821f16d, newRev : 7b25a5ebeb94ae458e79d599783af435bad8f075
+Oct 30, 2018 9:30:39 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Project Name : DevOps_Project, Build Number : 30
+Oct 30, 2018 9:30:39 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Build Resource Info Insert is Start
+Oct 30, 2018 9:30:40 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall BuildRscInfoCall
+INFO: BuildRscInfo Success! true
+Oct 30, 2018 9:30:40 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Build Resource Info Insert is Done
+[Gradle] - Launching build.
+[DevOps_Project] $ gradle cleanDir appDtoBuild appSrcCopy appSrcBuild dtoBuild srcCopy srcBuild appDtoJar appSrcJar dtoJar srcJar cleanBuildNumDir -b fullBuild.gradle
+Starting a Gradle Daemon (subsequent builds will be faster)
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+	at fullBuild_9bprqpvfn27jj2iqwmx8e2wbp$_run_closure3$_closure31.doCall(/home/po7dev/jenkins/workspace/DevOps_Project/fullBuild.gradle:79)
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
+cleanDir start!!!
+cleanDir end!!!
+appDtoBuild start!!!
+appDtoBuild end!!!
+appSrcCopy start!!!
+appSrcCopy end!!!
+appSrcBuild start!!!
+appSrcBuild end!!!
+dtoBuild start!!!
+dtoBuild end!!!
+srcCopy start!!!
+srcCopy end!!!
+rscBuild start!!!
+rscBuild end!!!
+appDtoJar start!!!
+appDtoJar end!!!
+appSrcJar start!!!
+appSrcJar end!!!
+dtoJar start!!!
+dtoJar end!!!
+srcJar start!!!
+srcJar end!!!
+cleanBuildNumDir start!!!
+cleanBuildNumDir end!!!
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:cleanDir SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoBuild SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcCopy SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcBuild SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoBuild SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcCopy SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcBuild SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoJar SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcJar SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoJar SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:srcJar SKIPPED
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:cleanBuildNumDir SKIPPED
+
+BUILD SUCCESSFUL in 2s
+Build step 'Invoke Gradle script' changed build result to SUCCESS
+[Gradle] - Launching build.
+[Gradle] - [ERROR] Can't retrieve the Gradle executable.
+Build step 'Invoke Gradle script' marked build as failure
+Finished: FAILURE

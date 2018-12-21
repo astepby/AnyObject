@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns11:service-group xmlns:ns2="http://www.tmax.co.kr/proobject/flow" xmlns:ns3="http://www.tmax.co.kr/proobject/serviceobject" xmlns:ns4="http://www.tmax.co.kr/proobject/bizobject" xmlns:ns5="http://www.tmax.co.kr/proobject/dataobjectfactory" xmlns:ns6="http://www.tmax.co.kr/proobject/dataobject" xmlns:ns7="http://www.tmax.co.kr/proobject/message" xmlns:ns8="http://www.tmax.co.kr/proobject/dto" xmlns:ns9="http://www.tmax.co.kr/proobject/resource" xmlns:ns10="http://www.tmax.co.kr/proobject/testcase" xmlns:ns11="http://www.tmax.co.kr/proobject/servicegroup" xmlns:ns12="http://www.tmax.co.kr/proobject/mapping" xmlns:ns13="http://www.tmax.co.kr/proobject/application/runtime" xmlns:ns14="http://www.tmax.co.kr/proobject/serviceobject-automatic" xmlns:ns15="http://www.tmax.co.kr/proobject/sourcecode" xmlns:ns16="http://www.tmax.co.kr/proobject/aspectj" xmlns:ns17="http://www.tmax.co.kr/proobject/taskobject" xmlns:ns18="http://www.tmax.co.kr/proobject/jobobject" xmlns:ns19="http://www.example.org/externalObjectConfig" xmlns:ns20="http://www.tmaxsoft.co.kr/proobject/testsuite" xmlns:ns21="http://www.tmax.co.kr/proobject/contents" xmlns:ns22="http://www.tmax.co.kr/proobject/probuilder_config" xmlns:ns23="http://www.tmaxsoft.co.kr/proobject/testOperation" xmlns:ns24="http://www.tmax.co.kr/proobject/serverConfig" xmlns:ns25="http://www.tmax.co.kr/proobject/siteConfig" xmlns:ns26="http://www.tmaxsoft.co.kr/proobject/testresult" xmlns:ns27="http://www.example.org/testData" xmlns:ns28="http://www.tmax.co.kr/proobject/property">
+    <ns11:group-name>licenseCheck</ns11:group-name>
+    <ns11:service-object>
+        <ns11:name>ManualSo</ns11:name>
+        <ns11:class-name>com.tmax.dbio.manualSo</ns11:class-name>
+        <ns11:input-dto>com.tmax.dbio.SampleDO</ns11:input-dto>
+        <ns11:output-dto>com.tmax.dbio.SampleDO</ns11:output-dto>
+        <ns11:service-type>COMPLEX</ns11:service-type>
+    </ns11:service-object>
+    <ns11:service-object>
+        <ns11:name>TestSO</ns11:name>
+        <ns11:class-name>com.tmax.test.testSO</ns11:class-name>
+        <ns11:input-dto>com.tmax.test.testDO</ns11:input-dto>
+        <ns11:output-dto>com.tmax.test.testDO</ns11:output-dto>
+        <ns11:service-type>COMPLEX</ns11:service-type>
+    </ns11:service-object>
+</ns11:service-group>

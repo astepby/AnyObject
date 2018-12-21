@@ -1,0 +1,14 @@
+commit f3415205f9c2eddbf0f0680148dfe46c8cb7349f
+tree 1fb7a4ec1e8b2f878bf3f50994d50f73bb862e73
+parent 9637eac08d0e2cb252fb9db5850da2560ac0ebad
+author Tmax <Tmax@DESKTOP-1L9FCDK> 2018-10-30 21:50:53 +0900
+committer Tmax <Tmax@DESKTOP-1L9FCDK> 2018-10-30 21:50:53 +0900
+
+    test
+
+
+
+:100644 100644 a1fcb7ec4dd2842441dc92d0ef9b805d88a23731 b1e73bd79bc0a6edede03388574a53218956990d M	TestSG/meta/com/tmax/test/TmaxDO.dto
+:100644 100644 6a56984c015017dbd80f92e09772e994ec5e23b3 af8c0d7fc08597efdd38eea3ed1c1f16111d182a M	TestSG/meta/com/tmax/test/TmaxDOF.factory
+:100644 100644 b26455c696f4b64df5d1941c07b922383376525d 0e9573a374865dbfc37c87c990e51fdebd457061 M	TestSG/meta/com/tmax/test/TmaxDOMsgJson.msg
+:100644 100644 250b05159ba784c1347593fd742f6708f2fcff6b c667451a822eecf68d08cb12b814af1ffac07c17 M	TestSG/meta/com/tmax/test/TmaxSO.so

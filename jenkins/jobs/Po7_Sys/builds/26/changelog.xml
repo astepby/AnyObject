@@ -1,0 +1,12 @@
+commit 461f541a6a97e4e8690238df2338c180833030c9
+tree f7b5ae9d55f98b2e79f1e9c4baaf36a15806ed02
+parent 6d88a69559bf20cad01d6d2668876a63a16d1c3f
+author jachun <jachun@DESKTOP-SM79OHF> 2018-10-31 14:36:51 +0900
+committer jachun <jachun@DESKTOP-SM79OHF> 2018-10-31 14:36:51 +0900
+
+    test
+
+
+
+:100644 100644 11e7f18629a93d74fe7ff6a7601160da11b3292d 20a300295a246a5d036310a54528de688e5ec26c M	TestSG/meta/com/tmax/DemoEmpDTO.dto
+:100644 100644 364ecebb04b76ca995e23ed5d94efa0267d65c5b aa495d2cd2bfcecd7c92b6382da5362fd1e895ce M	TestSG/meta/com/tmax/DemoEmpDTOMsgJson.msg

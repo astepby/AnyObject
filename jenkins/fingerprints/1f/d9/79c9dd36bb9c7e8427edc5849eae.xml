@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-10-30 06:58:57.282 UTC</timestamp>
+  <md5sum>1fd979c9dd36bb9c7e8427edc5849eae</md5sum>
+  <fileName>Credential id=29d45c2e-ce58-4ebb-9dae-0547c970f308 name=test_devops</fileName>
+  <usages>
+    <entry>
+      <string>Po7_Sys</string>
+      <ranges>1-37</ranges>
+    </entry>
+    <entry>
+      <string>DevOps_Project</string>
+      <ranges>2-71</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

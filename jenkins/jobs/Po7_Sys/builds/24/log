@@ -1,0 +1,17 @@
+Started by an SCM change
+Building in workspace /home/po7dev/jenkins/workspace/Po7_Sys
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url ssh://git-repo@192.168.6.68:22/testing.git # timeout=10
+Fetching upstream changes from ssh://git-repo@192.168.6.68:22/testing.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress ssh://git-repo@192.168.6.68:22/testing.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d74f22f3d37945cfd4d3618b6ab055f26ebbbedb (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d74f22f3d37945cfd4d3618b6ab055f26ebbbedb
+Commit message: "test"
+ > git rev-list --no-walk bda4248c8ca27640b03597728ab321fb66a3d757 # timeout=10
+Finished: SUCCESS

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-10-04 09:11:13.173 UTC</timestamp>
+  <md5sum>2d055488d7cb4ff47237c060e8c6a5b9</md5sum>
+  <fileName>Credential id=29d45c2e-ce58-4ebb-9dae-0547c970f308 name=test_devops</fileName>
+  <usages>
+    <entry>
+      <string>DevOps_Project</string>
+      <ranges>3-4,7-133</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

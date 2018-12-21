@@ -1,0 +1,12 @@
+commit 69b77092d59312c06317265002854c1ed05368fe
+tree a03cd808c3752ef345f5e380a7d403bc25c61d24
+parent 49511adedaf4f5d0941379f7af91a7eeb9fd6484
+author Tmax <Tmax@DESKTOP-1L9FCDK> 2018-10-30 22:15:56 +0900
+committer Tmax <Tmax@DESKTOP-1L9FCDK> 2018-10-30 22:15:56 +0900
+
+    test
+
+
+
+:100644 100644 e363a6b8c7bd7ab93372e6e2eb7d81026f420a83 7503a5928a063a8f5c8f43a3d3bfdd53abbddf6b M	TestApp/meta/com/tmax/test/TestAppDO.dto
+:100644 100644 8a450a5739fabba17158c91f52e5abb8d1f23e60 5fe3260e4ecd40a204dc6486355ca844b9a6c475 M	TestApp/meta/com/tmax/test/TestAppDOMsgJson.msg

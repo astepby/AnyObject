@@ -1,0 +1,10 @@
+Started on Oct 30, 2018 10:43:46 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 457222119c5890d9ae8fff82c45e7f85a61000a7 (refs/remotes/origin/master)
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git ls-remote -h ssh://git-repo@192.168.6.68:22/testing.git # timeout=10
+Found 1 remote heads on ssh://git-repo@192.168.6.68:22/testing.git
+[poll] Latest remote head revision on refs/heads/master is: e5b4cd2ae93119c98523a16a5f2683fb09103db2
+Done. Took 0.46 sec
+Changes found

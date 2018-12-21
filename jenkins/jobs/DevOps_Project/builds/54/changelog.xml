@@ -1,0 +1,14 @@
+commit 6482e5e279e2bd40aa28935ab6740d73dc5c238c
+tree b62ecc3bfd4c3c3c7287254bffe29ac72d51af18
+parent 9f4a58f28d7a7b191e08711dadc7d4bc527ddcf7
+author jachun <jachun@DESKTOP-SM79OHF> 2018-10-31 13:33:28 +0900
+committer jachun <jachun@DESKTOP-SM79OHF> 2018-10-31 13:33:28 +0900
+
+    test
+
+
+
+:100644 100644 3aa763cd33e137b4a8ff44ae2170a8a98fbb796d 04c35ca08a8d845b18484d6b69725d2fd0d3010d M	TestSG/.settings/org.eclipse.jdt.core.prefs
+:000000 100644 0000000000000000000000000000000000000000 c2d9872a163058f798b9d0d7e3b38f8d6f1c1a01 A	TestSG/bin/.gitignore
+:100644 100644 7849a819709911a4ede135eebb51ffea3673c8ef 5c985b6bea7aaf0c1b953d24e9e0e7874821bcf8 M	TestSG/meta/com/tmax/test/TmaxDO.dto
+:100644 100644 d20f8cdeac746586f15271f69dd1bed26b254668 f4bc3cc5a5311c1580d8eb869c9c2fb08da67502 M	TestSG/meta/com/tmax/test/TmaxDOMsgJson.msg

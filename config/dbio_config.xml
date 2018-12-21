@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dbio-config xmlns="http://www.tmax.co.kr/proobject/dbio-config">
+	<connection-info>
+		<datasources>
+			<pairDataSource alias="tibero6">
+				<non-XA-datasource jndi_name="tibero6" />
+				<XA-datasource jndi_name="tibero6" />
+			</pairDataSource>
+		</datasources>
+		<async-jdbc conn_name="tibero6" dbname="tibero" userid="sys" passwd="tibero" ip="192.168.6.69" port="8629" />
+
+		<!-- for Studio DO Factory target DB -->
+      <studio-jdbc conn_name="tibero6" username="csangh" passwd="csangh" driver="com.tmax.tibero.jdbc.TbDriver" pool_size="" url="jdbc:tibero:thin:@192.168.6.69:8629:tibero" />
+
+        
+	</connection-info>
+
+	<tool-config>
+        <sqlWithComment>true</sqlWithComment>
+        <showOwnSchema>false</showOwnSchema>
+        <schema-enable>fasle</schema-enable>
+        <default-schema>proobject</default-schema>
+        <null-convert>true</null-convert>
+        <alias-type>lowercase</alias-type>
+        <plan-schema>proobject</plan-schema>
+        <isEncrypt>false</isEncrypt>
+        <useStatement>false</useStatement>
+        <sqlParameterCase>lower</sqlParameterCase>
+    </tool-config>
+	
+</dbio-config>

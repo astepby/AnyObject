@@ -1,0 +1,154 @@
+Started by user [8mha:////4KpxVUFqKgIX+c8ZySAxB2f3SIrhd/haNKEiwjry7hsJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /home/po7dev/jenkins/workspace/DevOps_Project
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url ssh://git-repo@192.168.6.68:22/testing.git # timeout=10
+Fetching upstream changes from ssh://git-repo@192.168.6.68:22/testing.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress ssh://git-repo@192.168.6.68:22/testing.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 0cac236340277a51f44f3b3fccc35f9c947ece08 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0cac236340277a51f44f3b3fccc35f9c947ece08
+Commit message: "testtest"
+ > git rev-list --no-walk 0cac236340277a51f44f3b3fccc35f9c947ece08 # timeout=10
+[DevOps_Project] $ /bin/sh -xe /tmp/jenkins9182851232507299999.sh
++ /home/po7dev/jenkins/workspace/DevOps_Project/env_insert.sh
+propPath=/home/po7dev/jenkins/workspace/DevOps_Project/gradle.properties projectName=DevOps_Project poHome=/home/po7dev/proobject7 jenkinsHome=/home/po7dev/jenkins IsFullBuild=true buildNumber=33
+Oct 30, 2018 9:33:24 PM com.tmax.proobject.devclient.jenkins.PoPropertiesInsert main
+INFO: return of get build class path is true
+[DevOps_Project] $ /bin/sh -xe /tmp/jenkins4396373177438606305.sh
++ /home/po7dev/jenkins/workspace/DevOps_Project/buildRscInfo.sh
+lastlog=0cac236 HEAD@{0}: checkout: moving from dc558fce0becce709965bc0e2d911b1535123582 to 0cac236340277a51f44f3b3fccc35f9c947ece08
+start=dc558fce0becce709965bc0e2d911b1535123582
+end=0cac236340277a51f44f3b3fccc35f9c947ece08
+Oct 30, 2018 9:33:24 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: oldRev : dc558fce0becce709965bc0e2d911b1535123582, newRev : 0cac236340277a51f44f3b3fccc35f9c947ece08
+Oct 30, 2018 9:33:24 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Project Name : DevOps_Project, Build Number : 33
+Oct 30, 2018 9:33:24 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Build Resource Info Insert is Start
+Oct 30, 2018 9:33:24 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestApp/.classpath is not in <APPLICATION>/meta/ dir
+Oct 30, 2018 9:33:24 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestApp/.factorypath is not in <APPLICATION>/meta/ dir
+Oct 30, 2018 9:33:24 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestApp/.gitignore is not in <APPLICATION>/meta/ dir
+Oct 30, 2018 9:33:24 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestApp/.settings/org.eclipse.jdt.apt.core.prefs is not in <APPLICATION>/meta/ dir
+Oct 30, 2018 9:33:24 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestApp/.settings/org.eclipse.jdt.core.prefs is not in <APPLICATION>/meta/ dir
+Oct 30, 2018 9:33:24 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestApp/.settings/proobject-compiler-7.0.0.0.jar is not in <APPLICATION>/meta/ dir
+Oct 30, 2018 9:33:25 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall BuildRscInfoCall
+INFO: BuildRscInfo Success! true
+Oct 30, 2018 9:33:25 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Build Resource Info Insert is Done
+[Gradle] - Launching build.
+[DevOps_Project] $ gradle cleanDir appDtoBuild appSrcCopy appSrcBuild dtoBuild srcCopy srcBuild appDtoJar appSrcJar dtoJar srcJar cleanBuildNumDir -b fullBuild.gradle
+Starting a Gradle Daemon (subsequent builds will be faster)
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+	at fullBuild_9bprqpvfn27jj2iqwmx8e2wbp$_run_closure3$_closure31.doCall(/home/po7dev/jenkins/workspace/DevOps_Project/fullBuild.gradle:79)
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
+cleanDir start!!!
+cleanDir end!!!
+appDtoBuild start!!!
+appDtoBuild end!!!
+appSrcCopy start!!!
+appSrcCopy end!!!
+appSrcBuild start!!!
+appSrcBuild end!!!
+dtoBuild start!!!
+dtoBuild end!!!
+srcCopy start!!!
+srcCopy end!!!
+rscBuild start!!!
+rscBuild end!!!
+appDtoJar start!!!
+appDtoJar end!!!
+appSrcJar start!!!
+appSrcJar end!!!
+dtoJar start!!!
+dtoJar end!!!
+srcJar start!!!
+srcJar end!!!
+cleanBuildNumDir start!!!
+cleanBuildNumDir end!!!
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:cleanDir
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoBuild
+[ant:iajc] [warning] incorrect classpath: /home/po7dev/proobject7/resources/classes/_build/DevOps_Project/TestApp/TestSG-dto
+[ant:iajc] incorrect classpath: /home/po7dev/proobject7/resources/classes/_build/DevOps_Project/TestApp/TestSG
+[ant:iajc] 	
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcCopy NO-SOURCE
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appSrcBuild
+[ant:iajc] [warning] incorrect classpath: /home/po7dev/proobject7/resources/classes/_build/DevOps_Project/TestApp/TestSG-dto
+[ant:iajc] incorrect classpath: /home/po7dev/proobject7/resources/classes/_build/DevOps_Project/TestApp/TestSG
+[ant:iajc] 	
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoBuild
+[ant:iajc] [warning] incorrect classpath: /home/po7dev/proobject7/resources/classes/_build/DevOps_Project/TestApp/TestSG-dto
+[ant:iajc] incorrect classpath: /home/po7dev/proobject7/resources/classes/_build/DevOps_Project/TestApp/TestSG
+[ant:iajc] 	
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:30 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] com.tmax.DemoEmpDTO _DemoEmpDTO = (com.tmax.DemoEmpDTO)obj;
+[ant:iajc] ^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:30 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] com.tmax.DemoEmpDTO _DemoEmpDTO = (com.tmax.DemoEmpDTO)obj;
+[ant:iajc]                                    ^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:58 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] public void marshal(com.tmax.DemoEmpDTO _DemoEmpDTO, JsonWriter writer )throws Exception{	
+[ant:iajc]                     ^^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:102 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] com.tmax.DemoEmpDTO _DemoEmpDTO = new com.tmax.DemoEmpDTO();
+[ant:iajc] ^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:102 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] com.tmax.DemoEmpDTO _DemoEmpDTO = new com.tmax.DemoEmpDTO();
+[ant:iajc]                                       ^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:107 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] return new com.tmax.DemoEmpDTO();
+[ant:iajc]            ^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:116 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] _DemoEmpDTO = (com.tmax.DemoEmpDTO)unmarshal( jr,  _DemoEmpDTO);
+[ant:iajc]                ^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:134 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] com.tmax.DemoEmpDTO _DemoEmpDTO = (com.tmax.DemoEmpDTO) dto;
+[ant:iajc] ^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:134 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] com.tmax.DemoEmpDTO _DemoEmpDTO = (com.tmax.DemoEmpDTO) dto;
+[ant:iajc]                                    ^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:139 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] return new com.tmax.DemoEmpDTO();
+[ant:iajc]            ^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:147 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] _DemoEmpDTO = (com.tmax.DemoEmpDTO)unmarshal( jr,  _DemoEmpDTO);
+[ant:iajc]                ^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:162 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] public DataObject unmarshal(JsonReader reader, com.tmax.DemoEmpDTO dto) throws Exception{		 
+[ant:iajc]                                                ^^^^^^^^^^^^^^^^^
+[ant:iajc] /home/po7dev/jenkins/workspace/DevOps_Project/TestSG/.gen_src/dto/com/tmax/DemoEmpDTOMsgJson.java:174 [error] com.tmax.DemoEmpDTO cannot be resolved to a type
+[ant:iajc] protected void setField(com.tmax.DemoEmpDTO dto, JsonReader reader, String name) throws Exception{				
+[ant:iajc]                         ^^^^^^^^^^^^^^^^^
+[ant:iajc] 
+[ant:iajc] 13 errors, 1 warning
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:dtoBuild FAILED
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/po7dev/jenkins/workspace/DevOps_Project/fullBuild.gradle' line: 428
+
+* What went wrong:
+Execution failed for task ':dtoBuild'.
+> compile errors: 13
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 4s
+4 actionable tasks: 4 executed
+Build step 'Invoke Gradle script' changed build result to FAILURE
+Build step 'Invoke Gradle script' marked build as failure
+Finished: FAILURE

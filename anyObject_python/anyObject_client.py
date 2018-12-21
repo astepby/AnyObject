@@ -1,0 +1,17 @@
+# -*- coding: utf8 -*-
+
+import socket
+
+HOST='192.168.6.66' #localhost
+PORT=8765 #서버와 같은 포트사용
+print("소켓생성시작")
+s=socket.socket(socket.AF_INET, socket.SOCK_STREAM) #소켓생성
+print("소켓생성완료")
+s.connect((HOST,PORT))
+print("connect!")
+s.send(b'Hello, python from client') #문자를 보냄
+data=s.recv(1024) #서버로 부터 정보를 받음
+data2=s.recv(1024) #서버로 부터 정보를 받음
+s.close()
+print('Received',repr(data))
+print('Received',repr(data2))

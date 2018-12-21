@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="EUC-KR" standalone="yes"?>
+<siteConfig xmlns="http://www.tmax.co.kr/proobject/siteConfig">
+
+    <!-- [EMB Desginer Configuration] -->
+    <!-- Language : developement language (value : KR/EN/JP/CN) -->
+    <siteElement id="LANGUAGE" type="string" value="KR" xmlns=""/>
+
+    <!-- Trading Code / Service Name Required (value : true/false) -->
+    <siteElement id="SERVICE_NAME_REQUIRED" type="boolean" value="true" xmlns=""/>
+
+    <!-- Automatic Context Creation for Transformation -->
+    <!-- (value) CONTEXT-BYPASS (create contexts for all modules)
+                 INOUT-BYPASS (creates contexts for operation only that is working now)
+                 BYPASS (don't any action)
+                 MAPPING (don't any action)
+    -->
+    <siteElement id="CONTEXT_CREATION_WAY" type="string" value="INOUT-BYPASS" xmlns=""/>
+
+    <!-- Call Property within resources (value : true/false) -->
+    <!-- (comment : SO means SM, BO means BM -->
+    <siteElement id="FROM_SO_TO_SO" type="boolean" value="true" xmlns=""/>
+    <siteElement id="FROM_SO_TO_BO" type="boolean" value="true" xmlns=""/>
+    <siteElement id="FROM_SO_TO_DO" type="boolean" value="false" xmlns=""/>
+    <siteElement id="FROM_SO_TO_DBIO" type="boolean" value="true" xmlns=""/>
+    <siteElement id="FROM_SO_TO_RULE" type="boolean" value="true" xmlns=""/>
+    <siteElement id="FROM_SO_TO_EO" value="true" type="boolean" xmlns=""/>
+
+    <siteElement id="FROM_BO_TO_FACTORY" type="boolean" value="false" xmlns=""/>
+    <siteElement id="FROM_BO_TO_SO" type="boolean" value="true" xmlns=""/>
+    <siteElement id="FROM_BO_TO_BO" type="boolean" value="true" xmlns=""/>
+    <siteElement id="FROM_BO_TO_DO" type="boolean" value="true" xmlns=""/>
+    <siteElement id="FROM_BO_TO_DBIO" type="boolean" value="true" xmlns=""/>
+    <siteElement id="FROM_BO_TO_RULE" type="boolean" value="true" xmlns=""/>
+    <siteElement id="FROM_BO_TO_FACTORY" type="boolean" value="false" xmlns=""/>
+    <siteElement id="FROM_BO_TO_EO" value="true" type="boolean" xmlns=""/>
+
+    <siteElement id="FROM_DO_TO_SO" type="boolean" value="false" xmlns=""/>
+    <siteElement id="FROM_DO_TO_BO" type="boolean" value="false" xmlns=""/>
+    <siteElement id="FROM_DO_TO_DO" type="boolean" value="false" xmlns=""/>
+    <siteElement id="FROM_DO_TO_DBIO" type="boolean" value="true" xmlns=""/>
+    <siteElement id="FROM_DO_TO_RULE" type="boolean" value="false" xmlns=""/>
+    <siteElement id="FROM_DO_TO_FACTORY" type="boolean" value="false" xmlns=""/>
+    <siteElement id="FROM_DO_TO_EO" value="true" type="boolean" xmlns=""/>
+
+
+    <siteElement id="DBIO_DEFAULT_SESSION" value="proframe" type="string" xmlns=""/>
+
+    <siteElement id="FROM_BSO_TO_SO" value="true" type="boolean" xmlns=""/>
+    <siteElement id="FROM_BSO_TO_BO" value="true" type="boolean" xmlns=""/>
+    <siteElement id="FROM_BSO_TO_DO" value="true" type="boolean" xmlns=""/>
+    <siteElement id="FROM_BSO_TO_DBIO" value="true" type="boolean" xmlns=""/>
+    <siteElement id="FROM_BSO_TO_RULE" value="false" type="boolean" xmlns=""/>
+    <siteElement id="FROM_BSO_TO_FACTORY" value="false" type="boolean" xmlns=""/>
+    <siteElement id="FROM_BSO_TO_EO" value="true" type="boolean" xmlns=""/>
+
+    <!-- 20160111_01 Local Transactio deal with BO EMB's Commit, Rollvack node function -->
+    <siteElement id="LOCAL_TRANSACTION_CALL" value="true" type="string" xmlns=""/>
+
+    <siteElement id="BATCH_CONTROL_GEN" type="boolean" value="true" xmlns=""/>
+
+    <!-- 20151030_01 application-proframe.xml -->
+    <siteElement id="ENABLING_DYNAMIC_INOUT_SO" value="true" type="string" xmlns=""/> 
+
+    <!--20151215_05 BO's Getter/Setter setting about choice -->
+    <siteElement id="GENERATE_GETTER" value="true" type="boolean" xmlns=""/> 
+    <siteElement id="GENERATE_SETTER" value="true" type="boolean" xmlns=""/> 
+
+    <siteElement id="CONCURRENT" type="boolean" value="true" xmlns="" />
+
+	<siteElement id="USER_OPERATION_TYPE" type="userOperation" value="true" xmlns="">
+	<userOperation seq="0" type="lightGrayType" color="lightGray" xmlns=""/>
+	<userOperation seq="1" type="grayType" color="gray" xmlns=""/>
+	<userOperation seq="2" type="darkGrayType" color="darkGray" xmlns=""/>
+	<userOperation seq="3" type="blackType" color="0, 0, 0" xmlns=""/>
+	<userOperation seq="4" type="redType" color="255, 0, 0" xmlns=""/>
+	<userOperation seq="5" type="orangeType" color="orange" xmlns=""/>
+	<userOperation seq="6" type="yellowType" color="yellow" xmlns=""/>
+	<userOperation seq="7" type="greenType" color="0, 255, 0" xmlns=""/>
+	<userOperation seq="8" type="lightGreenType" color="96, 255, 96" xmlns=""/>
+	<userOperation seq="9" type="darkGreenType" color="darkGreen" xmlns=""/>
+	<userOperation seq="10" type="cyanType" color="cyan" xmlns=""/>
+	<userOperation seq="11" type="lightBlueType" color="lightBlue" xmlns=""/>
+	<userOperation seq="12" type="BlueType" color="0, 0, 255" xmlns=""/>
+	<userOperation seq="13" type="darkBlueType" color="0, 0, 127" xmlns=""/>
+	</siteElement>
+
+	<!-- <siteElement id="DBIO_DEFAULT_MAX_ROW_COUNT" type="string" value="50" xmlns=""/> --> <!-- b146 -->
+	<siteElement id="FN_NAME_LENGTH" type="integer" value="50" xmlns=""/>
+	<siteElement id="UNIQUE_SERVICE_OBJECT_PHYSICAL_NAME" type="boolean" value="true" xmlns=""/>
+
+	<siteElement id="SHOW_NODE_COUNT" type="boolean" value="false" xmlns=""/>   <!-- b166 -->
+	<siteElement id="MAX_IM_COUNT" type="integer" value="30" xmlns=""/>
+	<siteElement id="MAX_VM_COUNT" type="integer" value="30" xmlns=""/>
+	
+        <!-- 20160112_02 Junit Test header information default setting -->
+        <siteHeaders xmlns="">
+              <configs type="systemHeader">
+                   <config id="pfmTermnNo" value="1"/>
+                   <config id="PfmUserBrch" value="b"/>
+              </configs>
+              <configs type="proFrameHeader">
+                   <config id="pfmGlobalNo" value="abc"/>
+              </configs> 
+        </siteHeaders>       
+	<!-- 20150318_03: resource physical name prefix, suffix -->
+	<!--
+	<siteResNaming id="SO" prefix="QA_" suffix="_SO" xmlns=""/>
+	<siteResNaming id="BO" prefix="QA_" suffix="_BO" xmlns=""/>
+	<siteResNaming id="DO" prefix="QA_" suffix="_DO" xmlns=""/>
+	<siteResNaming id="JO" prefix="QA_" suffix="_JO" xmlns=""/>
+	-->
+
+	<!-- 20150518_02: Set BO EMB VirtualNode Custom Color -->
+	<siteEmbColors xmlns="">
+                <color colorName="DO" foregroundColor="FFFFFF" backgroundColor="FF12DD"/>
+  		<color colorName="External" foregroundColor="FFFF2F" backgroundColor="F212DD"/>
+        </siteEmbColors>
+
+	<!-- 20150807_01: EMBBO/JO defalut module configration -->
+        <siteEmbConfig xmlns="">
+        	<bizFlowConfig> <!-- biz flow -->
+                	<configs type="inner">
+                		<config id="innerDefaultType" value="block"/>   <!-- inner module default type(block, if, method) -->
+                	</configs>
+                	<configs type="doCall">
+                        	<config id="activate" value="true"/> <!-- activate DataObject variable -->
+                        </configs>
+                </bizFlowConfig>
+                <jobFlowConfig> <!-- job flow -->
+                	<configs type="common">
+                        	<config id="commonType" value="normal"/>
+                                <config id="commonBo" value="com.tmax.epqa.test.obj.job.bo.CommonNormalBO"/>
+                                <config id="commonName" value="공통"/>
+                        </configs>
+                       <configs type="online">
+                        	<config id="activate-table-based" value="true"/>
+                                <!-- 20151202 multiNode batch's commit rotarion update -->
+                        <config id="commit-interval" value="false"/>
+                        </configs>
+                                <!-- 20151221_02 if Studion job generate, validation function about job thread -->
+                        <configs type="taskBlock">
+                                <config id="max-total-thread-count" value="100"/>
+                        </configs>
+                        <configs type="online">
+                                <config id="max-task-thread-count" value="1"/>
+                                <config id="max-request-thread-count" value="2"/>
+                        </configs>
+                        <configs type="etl">
+                                <config id="max-task-thread-count" value="50"/>	
+                                <config id="max-extract-thread-count" value="1"/>
+                                <config id="max-transform-thread-count" value="1"/>
+                                <config id="max-load-thread-count" value="1"/> 
+                        </configs>
+                        <configs type="normal">
+                                <config id="max-thread-count" value="10"/>
+                        </configs>                
+                </jobFlowConfig>
+                <!-- 20160224_02 NH EMB function/VM module prohibit -->
+                <serviceFlowConfig>
+			<configs type = "callNode">
+				<config id = "ENABLE_CALL_NODE" value = "false"/>
+			</configs>
+			<configs type = "virtual">
+				<config id = "ENABLE_VIRTUAL_MODULE" value = "false"/>
+			</configs>
+		</serviceFlowConfig>
+        </siteEmbConfig>
+
+        <!-- 20160224_02 if EMB BO do variable declaration, it have to assign DataSource -->
+        <siteElement id="ENABLE_EMPTY_DATASOURCE" value="false" type="boolean" xmlns=""/>
+
+        <!-- 20160224_02 local testcase file can't use commit -->
+        <siteElement id="ENABLE_COMMIT_TEST_RESOURCE" value="true" type="boolean" xmlns=""/>
+
+        <!-- 20150527_01: When Check In/Out, Enable or Disable CommentDialog (KT SVN linked requirement) -->
+        <siteElement id="ENABLE_CHECKIN_COMMENT" value="true" type="boolean" xmlns=""/>
+        <siteElement id="ENABLE_CHECKOUT_COMMENT" value="false" type="boolean" xmlns=""/>
+
+        <!-- 20151117_01: Local(STUDIO) SSO -->
+        <!--siteElement id="USE_LOCAL_SSO_LOGIN" type="boolean" value="true" xmlns=""/-->
+        <!--siteElement id="USE_LOCAL_SSO_LOGIN" value="true" type="string" xmlns=""/--> 
+
+        <!-- 20150831_02: ETC folder Resources -->
+        <siteElement id="ETC_EXTENSIONS" type="string" value="sh:properties:html:UT:java:apt" xmlns=""/>
+
+        <!-- 20150907_02: Registe JOB to File -->
+        <siteElement id="JOB_REGISTER_TYPE" type="string" value="File" xmlns=""/>
+
+	<!-- 20150916_03: XML Message -->
+	<siteElement id="xml-marsal-nullTag-type" value="self" type="string" xmlns=""/>
+	<siteElement id="xml-marshal-emptyTag-type" value="pair" type="string" xmlns=""/>
+	<siteElement id="xml-unmarshal-emptyTag-type" value="pair" type="string" xmlns=""/>
+	<siteElement id="DOWNLOAD_SHAREDLIB_ON_LOGIN" value="false" type="string" xmlns=""/>
+	<siteElement id="GENERATE_CONVERTED_TABLE_SELECT_SQL" value="true" type="string" xmlns=""/>
+	
+        <!-- 20151214_06 if DTO commit, DTO include not xml message file, xml message generate about sellect DTO with commit -->
+        <siteElement id="CHECK_XML_MESSAGE_GEN" value="true" type="boolean" xmlns=""/>
+</siteConfig>

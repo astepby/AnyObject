@@ -1,0 +1,137 @@
+# coding: utf-8
+import socket
+
+import sys, os
+sys.path.append(os.pardir)  
+import numpy as np
+import matplotlib.pyplot as plt
+from cnnclass.cnn_network import CnnNetwork
+from matplotlib.image import imread
+from subpy.layers import Convolution
+from subpy.functions import *
+from subpy.training import Cnntraining
+from dataset.mnist import load_mnist
+from PIL import Image
+
+def recvall(sock, count):
+    buf = b''
+    while count:
+        newbuf = sock.recv(count)
+        if not newbuf: return None
+        buf += newbuf
+        count -= len(newbuf)
+    return buf
+
+def img_show(img):
+    # convert values to 0 - 255 int8 format
+    formatted = (img * 255 / np.max(img)).astype('uint8')
+    img = Image.fromarray(formatted)
+    pil_img = Image.fromarray(np.uint8(img))
+    pil_img.show()
+
+
+def barchart(data, labels): 
+    num_bars = len(data) 
+    positions = range(1, num_bars + 1) 
+    plt.barh(positions, data, align='center') 
+    plt.yticks(positions, labels) 
+    plt.xlabel('probability') 
+    plt.ylabel('Labels') 
+    plt.title('PDF') 
+    plt.grid() 
+    plt.show()
+    
+
+
+print("01_  CNN 생성")
+#CNN
+                        #Set (input channel , height, width)
+network = CnnNetwork(input_dim=(1,28,28), 
+                        #Set convolution layer with filter parameters
+                        convolution_setting = {'filter_num' : 60, 
+                                               'filter_size': 5, 
+                                                   'padding': 2, 
+                                                    'stride': 1},
+                        #Set Fully connected layer
+                        hlayer=1000, 
+                        olayer=10)
+print("02_  CNN 파라미터 load")
+# 학습된 가중치
+network.load_parameters("parameters_fn60fs5p20s1_5epochs.pkl")
+
+print("03_  sample MNIST data load")
+(x_train, t_train), (x_test, t_test) = load_mnist(flatten=False)
+
+print("\t Examplar data select")
+nnn=10
+x_input=x_test[nnn:nnn+1,:]
+print("\t Examplar data plot")
+img = x_input
+#print(img.shape)  
+img = img.reshape(28, 28)  
+#print(img.shape)
+img_show(img)
+
+
+while True:   
+    print(">> Waiting for the input data from the client........")
+
+    HOST='' #호스트를 지정하지 않으면 가능한 모든 인터페이스를 의미한다.
+    PORT=50007 #포트지정
+    #PORT=100 #포트지정
+    s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    s.bind((HOST,PORT))
+    s.listen(100) #접속이 있을때까지 기다림
+    conn, addr=s.accept() #접속 승인
+    print('>> Connected by',addr)
+    
+    data=conn.recv(1024) #바이트 data 길이 확인
+    blength=int(data.decode("utf-8"))
+    data784=recvall(conn,blength)
+    print(">> Transferred data length : ",len(data784))
+    
+    data784=data784.decode("utf-8")
+    data784=data784.split(',')
+    data784=np.asarray(data784, dtype=np.float32)
+    print(">> Reshaping data")
+    
+    data2828=data784.reshape(28,28)
+    data2828=np.asarray([data2828])
+    data2828=np.asarray([data2828])
+    x_input=data2828
+    print(">> input data type : ", type(x_input))
+    
+    print("04_  Feed forward")
+    y_output = network.predict(x_input)
+    y_output=np.around(y_output)
+    y_output=y_output[0]
+    #y_output=np.ndarray.tolist(y_output[0][:])
+    y_result=np.argmax(y_output)
+    
+    
+    y_label=[i for i in range(10)]
+    y_label=np.asfarray(y_label)
+    
+    print("================================")
+    print("Label \t Probability")
+    prob=softmax(y_output)
+    for i in y_label:
+
+        print(" ",int(i),"\t %+.6f"%prob[int(i)], "<- as predicted!" if i==int(y_result) else "" )    
+    print("================================")
+    print(">> Number predicted as : ",y_result)
+
+    ###barchart(y,y_label)
+    
+    data = str(y_result)
+    data=data.encode(encoding='utf-8', errors='strict')
+    
+    
+    conn.send(data)
+    conn.close()
+  
+    img = x_input
+    img = img.reshape(28, 28)  
+    img_show(img)
+    #break

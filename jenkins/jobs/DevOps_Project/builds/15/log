@@ -1,0 +1,241 @@
+Started by user [8mha:////4KpxVUFqKgIX+c8ZySAxB2f3SIrhd/haNKEiwjry7hsJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /home/po7dev/jenkins/workspace/DevOps_Project
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url ssh://git-repo@192.168.6.68:22/testing.git # timeout=10
+Fetching upstream changes from ssh://git-repo@192.168.6.68:22/testing.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress ssh://git-repo@192.168.6.68:22/testing.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 8dee3a700eac0894908ffe7d874bd6de548b2a0d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8dee3a700eac0894908ffe7d874bd6de548b2a0d
+Commit message: "test"
+ > git rev-list --no-walk 8dee3a700eac0894908ffe7d874bd6de548b2a0d # timeout=10
+[DevOps_Project] $ /bin/sh -xe /tmp/jenkins4054985333237657243.sh
++ /home/po7dev/jenkins/workspace/DevOps_Project/env_insert.sh
+propPath=/home/po7dev/jenkins/workspace/DevOps_Project/gradle.properties projectName=DevOps_Project poHome=/home/po7dev/proobject7 jenkinsHome=/home/po7dev/jenkins IsFullBuild=true buildNumber=15
+Oct 30, 2018 5:48:05 PM com.tmax.proobject.devclient.jenkins.PoPropertiesInsert main
+INFO: return of get build class path is true
+[DevOps_Project] $ /bin/sh -xe /tmp/jenkins3877058798882377775.sh
++ /home/po7dev/jenkins/workspace/DevOps_Project/buildRscInfo.sh
+lastlog=8dee3a7 HEAD@{0}: checkout: moving from 7181257acafae7c4069e28febc2fcb4fd37e3f20 to 8dee3a700eac0894908ffe7d874bd6de548b2a0d
+start=7181257acafae7c4069e28febc2fcb4fd37e3f20
+end=8dee3a700eac0894908ffe7d874bd6de548b2a0d
+Oct 30, 2018 5:48:05 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: oldRev : 7181257acafae7c4069e28febc2fcb4fd37e3f20, newRev : 8dee3a700eac0894908ffe7d874bd6de548b2a0d
+Oct 30, 2018 5:48:05 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Project Name : DevOps_Project, Build Number : 15
+Oct 30, 2018 5:48:05 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Build Resource Info Insert is Start
+Oct 30, 2018 5:48:06 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.gen_src/com/tmax/DemoEmpDTO.java is not in <APPLICATION>/meta/ dir
+Oct 30, 2018 5:48:06 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.gen_src/com/tmax/DemoEmpDTOMsgJson.java is not in <APPLICATION>/meta/ dir
+Oct 30, 2018 5:48:06 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/.settings/org.eclipse.core.resources.prefs is not in <APPLICATION>/meta/ dir
+Oct 30, 2018 5:48:06 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall checkOranizeFilePath
+INFO: TestSG/bin/.gitignore is not in <APPLICATION>/meta/ dir
+Oct 30, 2018 5:48:06 PM com.tmax.proobject.devclient.jenkins.BuildRscInfoCall BuildRscInfoCall
+INFO: BuildRscInfo Success! true
+Oct 30, 2018 5:48:06 PM com.tmax.proobject.git.system.BuildRscInfoInsert main
+INFO: Build Resource Info Insert is Done
+[Gradle] - Launching build.
+[DevOps_Project] $ gradle cleanDir appDtoBuild appSrcCopy appSrcBuild dtoBuild srcCopy srcBuild appDtoJar appSrcJar dtoJar srcJar cleanBuildNumDir -b fullBuild.gradle
+Starting a Gradle Daemon (subsequent builds will be faster)
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+	at fullBuild_9bprqpvfn27jj2iqwmx8e2wbp$_run_closure3$_closure31.doCall(/home/po7dev/jenkins/workspace/DevOps_Project/fullBuild.gradle:79)
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
+cleanDir start!!!
+cleanDir end!!!
+appDtoBuild start!!!
+appDtoBuild end!!!
+appSrcCopy start!!!
+appSrcCopy end!!!
+appSrcBuild start!!!
+appSrcBuild end!!!
+dtoBuild start!!!
+dtoBuild end!!!
+srcCopy start!!!
+srcCopy end!!!
+rscBuild start!!!
+rscBuild end!!!
+appDtoJar start!!!
+appDtoJar end!!!
+appSrcJar start!!!
+appSrcJar end!!!
+dtoJar start!!!
+dtoJar end!!!
+srcJar start!!!
+srcJar end!!!
+cleanBuildNumDir start!!!
+cleanBuildNumDir end!!!
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:cleanDir
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoBuild
+[ant:iajc] [warning] incorrect classpath: /home/po7dev/proobject7/resources/classes/_build/DevOps_Project/TestApp/TestSG-dto
+[ant:iajc] incorrect classpath: /home/po7dev/proobject7/resources/classes/_build/DevOps_Project/TestApp/TestSG
+[ant:iajc] 	
+[ant:iajc] [error] no sources specified
+[ant:iajc] 	
+[ant:iajc] AspectJ Compiler 1.8.9
+[ant:iajc] 
+[ant:iajc] 	Usage: <options> <source file | @argfile>..
+[ant:iajc] 
+[ant:iajc] AspectJ-specific options:
+[ant:iajc] 	-inpath <list>      use classes in dirs and jars/zips in <list> as source
+[ant:iajc] 	                    (<list> uses platform-specific path delimiter)
+[ant:iajc] 	-injars <jarList>   use classes in <jarList> zip files as source
+[ant:iajc] 	                    (<jarList> uses classpath delimiter)
+[ant:iajc] 	                    deprecated - use inpath instead.
+[ant:iajc] 	-aspectpath <list>  weave aspects in .class files from <list> dirs and jars/zip into sources
+[ant:iajc] 	                    (<list> uses classpath delimiter)
+[ant:iajc] 	-outjar <file>      put output classes in zip file <file>
+[ant:iajc] 	-outxml             generate META-INF/aop.xml
+[ant:iajc] 	-outxmlfile <file>  specify alternate destination output of -outxml
+[ant:iajc] 	-argfile <file>     specify line-delimited list of source files
+[ant:iajc] 	-showWeaveInfo      display information about weaving
+[ant:iajc] 	-incremental        continuously-running compiler, needs -sourceroots
+[ant:iajc] 	                    (reads stdin: enter to recompile and 'q' to quit)
+[ant:iajc] 	-sourceroots <dirs> compile all .aj and .java files in <dirs>
+[ant:iajc] 	                    (<dirs> uses classpath delimiter)
+[ant:iajc] 	-crossrefs          generate .ajsym file into the output directory
+[ant:iajc] 	-emacssym           generate .ajesym symbol files for emacs support
+[ant:iajc] 	-Xlint              same as '-Xlint:warning'
+[ant:iajc] 	-Xlint:<level>      set default level for crosscutting messages
+[ant:iajc] 	                    (<level> may be ignore, warning, or error)
+[ant:iajc] 	-Xlintfile <file>   specify properties file to set per-message levels
+[ant:iajc] 	                    (cf org/aspectj/weaver/XlintDefault.properties)
+[ant:iajc] 	-X                  print help on non-standard options
+[ant:iajc] 
+[ant:iajc] Standard Eclipse compiler options:
+[ant:iajc]  Options enabled by default are prefixed with '+'
+[ant:iajc]  
+[ant:iajc]  Classpath options:
+[ant:iajc]     -cp -classpath <directories and zip/jar files separated by ;>
+[ant:iajc]                        specify location for application classes and sources
+[ant:iajc]     -bootclasspath <directories and zip/jar files separated by ;>
+[ant:iajc]                        specify location for system classes
+[ant:iajc]     -d <dir>           destination directory (if omitted, no directory is created)
+[ant:iajc]     -d none            generate no .class files
+[ant:iajc]     -encoding <enc>    specify custom encoding for all sources. Each file/directory can override it
+[ant:iajc]                        when suffixed with '['<enc>']' (e.g. X.java[utf8])
+[ant:iajc]  
+[ant:iajc]  Compliance options:
+[ant:iajc]     -1.3               use 1.3 compliance level (implicit -source 1.3 -target 1.1)
+[ant:iajc]     -1.4             + use 1.4 compliance level
+[ant:iajc]     -1.5 -5 -5.0       use 1.5 compliance (-source 1.5 -target 1.5)
+[ant:iajc]     -1.6 -6 -6.0       use 1.6 compliance (-source 1.6 -target 1.6)
+[ant:iajc]     -1.7 -7 -7.0       use 1.7 compliance (-source 1.7 -target 1.7)
+[ant:iajc]     -1.8 -8 -8.0       use 1.8 compliance (-source 1.8 -target 1.8)
+[ant:iajc]     -source <version>  set source level: 1.3 to 1.8 (or 5, 5.0, etc)
+[ant:iajc]     -target <version>  set classfile target: 1.1 to 1.8 (or 5, 5.0, etc)
+[ant:iajc]  
+[ant:iajc]  Warning options:
+[ant:iajc]     -deprecation         + deprecation outside deprecated code
+[ant:iajc]     -nowarn -warn:none disable all warnings
+[ant:iajc]     -warn:<warnings separated by ,>    enable exactly the listed warnings
+[ant:iajc]     -warn:+<warnings separated by ,>   enable additional warnings
+[ant:iajc]     -warn:-<warnings separated by ,>   disable specific warnings
+[ant:iajc]       allDeadCode          dead code including trivial if(DEBUG) check
+[ant:iajc]       allDeprecation       deprecation including inside deprecated code
+[ant:iajc]       allJavadoc           invalid or missing javadoc
+[ant:iajc]       allOver-ann          all missing @Override annotations
+[ant:iajc]       all-static-method    all method can be declared as static warnings
+[ant:iajc]       assertIdentifier   + 'assert' used as identifier
+[ant:iajc]       boxing               autoboxing conversion
+[ant:iajc]       charConcat         + char[] in String concat
+[ant:iajc]       compareIdentical   + comparing identical expressions
+[ant:iajc]       conditionAssign      possible accidental boolean assignment
+[ant:iajc]       constructorName    + method with constructor name
+[ant:iajc]       deadCode           + dead code excluding trivial if (DEBUG) check
+[ant:iajc]       dep-ann              missing @Deprecated annotation
+[ant:iajc]       deprecation        + deprecation outside deprecated code
+[ant:iajc]       discouraged        + use of types matching a discouraged access rule
+[ant:iajc]       emptyBlock           undocumented empty block
+[ant:iajc]       enumIdentifier       'enum' used as identifier
+[ant:iajc]       enumSwitch           incomplete enum switch
+[ant:iajc]       fallthrough          possible fall-through case
+[ant:iajc]       fieldHiding          field hiding another variable
+[ant:iajc]       finalBound           type parameter with final bound
+[ant:iajc]       finally            + finally block not completing normally
+[ant:iajc]       forbidden          + use of types matching a forbidden access rule
+[ant:iajc]       hashCode              missing hashCode() method when overriding equals()
+[ant:iajc]       hiding               macro for fieldHiding, localHiding, typeHiding and
+[ant:iajc]                            maskedCatchBlock
+[ant:iajc]       includeAssertNull    raise null warnings for variables
+[ant:iajc]                            that got tainted in an assert expression
+[ant:iajc]       indirectStatic       indirect reference to static member
+[ant:iajc]       intfAnnotation     + annotation type used as super interface
+[ant:iajc]       intfNonInherited   + interface non-inherited method compatibility
+[ant:iajc]       intfRedundant        find redundant superinterfaces
+[ant:iajc]       javadoc              invalid javadoc
+[ant:iajc]       localHiding          local variable hiding another variable
+[ant:iajc]       maskedCatchBlock   + hidden catch block
+[ant:iajc]       nls                  string literal lacking non-nls tag //$NON-NLS-<n>$
+[ant:iajc]       noEffectAssign     + assignment without effect
+[ant:iajc]       null                 potential missing or redundant null check
+[ant:iajc]       nullDereference    + missing null check
+[ant:iajc]       over-ann             missing @Override annotation (superclass)
+[ant:iajc]       paramAssign          assignment to a parameter
+[ant:iajc]       pkgDefaultMethod   + attempt to override package-default method
+[ant:iajc]       raw                + usage of raw type
+[ant:iajc]       semicolon            unnecessary semicolon, empty statement
+[ant:iajc]       serial             + missing serialVersionUID
+[ant:iajc]       specialParamHiding   constructor or setter parameter hiding a field
+[ant:iajc]       static-method        method can be declared as static
+[ant:iajc]       static-access        macro for indirectStatic and staticReceiver
+[ant:iajc]       staticReceiver     + non-static reference to static member
+[ant:iajc]       super                overriding a method without making a super invocation
+[ant:iajc]       suppress           + enable @SuppressWarnings
+[ant:iajc]                            When used with -err:, it can also silent optional
+[ant:iajc]                            errors and warnings
+[ant:iajc]       syncOverride         missing synchronized in synchr. method override
+[ant:iajc]       syntheticAccess      synthetic access for innerclass
+[ant:iajc]       tasks(<tags separated by |>) tasks identified by tags inside comments
+[ant:iajc]       typeHiding         + type parameter hiding another type
+[ant:iajc]       unavoidableGenericProblems + ignore unavoidable type safety problems
+[ant:iajc]                                    due to raw APIs
+[ant:iajc]       unchecked          + unchecked type operation
+[ant:iajc]       unnecessaryElse      unnecessary else clause
+[ant:iajc]       unqualifiedField     unqualified reference to field
+[ant:iajc]       unused               macro for unusedAllocation, unusedArgument,
+[ant:iajc]                                unusedImport, unusedLabel, unusedLocal,
+[ant:iajc]                                unusedPrivate, unusedThrown, and unusedTypeArgs
+[ant:iajc]       unusedAllocation     allocating an object that is not used
+[ant:iajc]       unusedArgument       unread method parameter
+[ant:iajc]       unusedImport       + unused import declaration
+[ant:iajc]       unusedLabel        + unused label
+[ant:iajc]       unusedLocal        + unread local variable
+[ant:iajc]       unusedPrivate      + unused private member declaration
+[ant:iajc]       unusedThrown         unused declared thrown exception
+[ant:iajc]       unusedTypeArgs     + unused type arguments for method and constructor
+[ant:iajc]       uselessTypeCheck     unnecessary cast/instanceof operation
+[ant:iajc]       varargsCast        + varargs argument need explicit cast
+[ant:iajc]       warningToken       + unsupported or unnecessary @SuppressWarnings
+[ant:iajc] 
+[ant:iajc] 	
+[ant:iajc] 
+[ant:iajc] 1 fail|abort, 1 error, 1 warning
+[8mha:////4H5Pvs1dtw10zkWTz2X811I2ZpuWAgRP6w2B4aRg1+tfAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:appDtoBuild FAILED
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/po7dev/jenkins/workspace/DevOps_Project/fullBuild.gradle' line: 295
+
+* What went wrong:
+Execution failed for task ':appDtoBuild'.
+> compile errors: 255
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+2 actionable tasks: 2 executed
+Build step 'Invoke Gradle script' changed build result to FAILURE
+Build step 'Invoke Gradle script' marked build as failure
+Finished: FAILURE

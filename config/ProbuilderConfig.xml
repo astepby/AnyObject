@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<probuilder_config xmlns="http://www.tmax.co.kr/proobject/probuilder_config">
+    <default-dto-names dtoPrefix="Pre" dtoSuffix="Dto" inDtoPrefix="InPre" inDtoSuffix="ListDto" xmlns=""/>
+    <real-type xmlns="">true</real-type>
+    <all-property-from-server xmlns="">false</all-property-from-server>
+    <proMapperConfig xmlns="">
+        <inLogicalSuffix>입력</inLogicalSuffix>
+        <inPhysicalSuffix>In</inPhysicalSuffix>
+        <outLogicalSuffix>출력</outLogicalSuffix>
+        <outPhysicalSuffix>Out</outPhysicalSuffix>
+        <mapLogicalSuffix>맵</mapLogicalSuffix>
+        <mapPhysicalSuffix>Map</mapPhysicalSuffix>
+        <messageLogicalSuffix>메세지</messageLogicalSuffix>
+        <messageLogicalSuffixDel>Del</messageLogicalSuffixDel>
+        <messageLogicalSuffixFld>Fld</messageLogicalSuffixFld>
+        <messageLogicalSuffixNv>Nv</messageLogicalSuffixNv>
+        <messageLogicalSuffixVo>Vo</messageLogicalSuffixVo>
+        <messageLogicalSuffixXml>Xml</messageLogicalSuffixXml>
+        <messageLogicalSuffixJSON>Json</messageLogicalSuffixJSON>
+        <messagePhysicalSuffix>Msg</messagePhysicalSuffix>
+        <messagePhysicalSuffixDel>Del</messagePhysicalSuffixDel>
+        <messagePhysicalSuffixFld>Fld</messagePhysicalSuffixFld>
+        <messagePhysicalSuffixNv>Nv</messagePhysicalSuffixNv>
+        <messagePhysicalSuffixVo>Vo</messagePhysicalSuffixVo>
+        <messagePhysicalSuffixXml>Xml</messagePhysicalSuffixXml>
+        <messagePhysicalSuffixJSON>Json</messagePhysicalSuffixJSON>
+        <applyDefaultMapName>true</applyDefaultMapName>
+        <applySkipMapNewWizard>true</applySkipMapNewWizard>
+        <mapPackageName>map</mapPackageName>
+        <mappingModuleNameCount>25</mappingModuleNameCount>
+        <parentModuleNameCount>25</parentModuleNameCount>
+        <generateMapResourceMeta>false</generateMapResourceMeta>
+        <applyErrorForAssignLength>false</applyErrorForAssignLength>
+        <useCustomField>true</useCustomField>
+        <usePropertyMap>false</usePropertyMap>
+        <cloneOption>cloneAliasRefDto</cloneOption>
+        <fieldTypeList>string,number,integer,include,binary,date,short,int,long,float,double,Short,Integer,Long,Double,BigInteger,BigDecimal,char,boolean,byte,Date,ArrayStart,ArrayEnd,StructureStart,StructureEnd,BLocator,CLocator</fieldTypeList>
+        <applyNullFieldLengthOfStructure>false</applyNullFieldLengthOfStructure>
+        <applyNotCheckProperty>false</applyNotCheckProperty>
+        <defaultValueOfStringField>empty</defaultValueOfStringField> 
+        <applyCanModifyNullableOfStringField>true</applyCanModifyNullableOfStringField> 
+        <pairDtoField>
+            <pairDtoField array="" comments="" decimal="" fieldType="integer" length="10" logicalName="변경건수" physicalName="dbio_affected_count_"/>
+            <pairDtoField array="" comments="" decimal="" fieldType="integer" length="5" logicalName="페이징건수" physicalName="dbio_fetch_size_"/>
+            <pairDtoField array="" comments="" decimal="" fieldType="integer" length="5" logicalName="페이징시컨스" physicalName="dbio_fetch_seq_"/>
+            <pairDtoField array="" comments="" decimal="" fieldType="integer" length="10" logicalName="전체건수" physicalName="dbio_total_count_"/>
+        </pairDtoField>
+        <fieldDtoAttributeSetting>logicalName,true,true:physicalName,true,true:fieldType,true,true:include,true,true:length,true,true:array,true,false:decimal,true,false:comments,true,false:nullable,true,false</fieldDtoAttributeSetting>
+        <disableDatabaseDrop>false</disableDatabaseDrop>
+        <defaultNullable>true</defaultNullable>
+        <ruleDtoSrcGen>false</ruleDtoSrcGen>
+        <forceStrLengthToMsgLength>false</forceStrLengthToMsgLength>
+        <defaultDelimiter>,</defaultDelimiter>
+        <dateTypeFormatList>yyyy.MM.dd HH.mm.ss</dateTypeFormatList>
+        <fieldMsgAttributeSetting>logicalName,true,true:physicalName,true,true:fieldType,true,true:include,true,true:length,true,false:array,true,false:decimal,true,true:comments,true,true:align,true,false:fill,true,false:point,true,false:sign,true,false:delimiter,true,false:trim,true,false:dateFormat,true,false:encodeOption,true,false</fieldMsgAttributeSetting>
+        <searchFieldOption>0</searchFieldOption>
+        <searchMinCount>2</searchMinCount>
+        <applyFieldAttribute>false</applyFieldAttribute>
+        <attributeFieldInfo>CellInfo,char,6,1,1,I:Extend,char,2,1,2,X:Disable,char,1,1,3,D:Error,char,1,1,4,E:Color,char,2,1,5,C</attributeFieldInfo>
+        <fieldControlList>INPUT,OUTPUT,GRID,COMBO,CHECKBOX,LISTVIEW,LABEL,BUTTON,GROUPBOX,OCCURS,RADIOBUTTON,PWDINPUT,CHART,IMAGE</fieldControlList>
+        <siteProjectName>Test Project</siteProjectName>
+    </proMapperConfig>
+    <propertyDupCheckCondition xmlns="">physicalName</propertyDupCheckCondition>
+    <itemProviders xmlns="">
+        <itemProvider providerName="rm_flag">
+            <item>true</item>
+            <item>false</item>
+        </itemProvider>
+    </itemProviders>
+    <generate-memory-calculate xmlns="">true</generate-memory-calculate>
+    <propertySearchFromDB xmlns="">true</propertySearchFromDB>
+</probuilder_config>
+
